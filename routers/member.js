@@ -1,15 +1,14 @@
 const express = require("express")
 const app = express()
+const {auth} = require("./login")
+
+// app.use(auth)
 
 app.use(express.json())
 
 const models = require("../models/index")
 
 const member = models.member
-
-const {auth} = require("./login")
-
-app.use(auth)
 
 app.get("/", async (request, response) => {
     let dataMember = await member.findAll()

@@ -167,7 +167,7 @@ app.post("/status/:id_transaksi", (request, response) => {
         })
 })
 
-app.post("/bayar/:id_transaksi", (request, response) => {
+app.get("/bayar/:id_transaksi", (request, response) => {
 
     let parameter = {
         id_transaksi: request.params.id_transaksi
