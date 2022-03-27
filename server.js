@@ -17,6 +17,6 @@ app.use("/api/paket", paket)
 app.use("/api/transaksi", transaksi)
 app.use("/api/auth", login)
 
-app.listen(8000,() => {
-    console.log(`Server run on port 8000`);
+app.listen(8001,() => {
+    console.log(`Server run on port 8001`);
 })
